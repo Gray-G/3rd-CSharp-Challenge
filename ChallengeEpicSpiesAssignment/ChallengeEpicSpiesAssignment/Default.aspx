@@ -6,13 +6,13 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 190px;
-            height: 236px;
-        }
         .auto-style2 {
-            font-family: Arial, Helvetica, sans-serif;
             font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style3 {
+            width: 154px;
+            height: 190px;
         }
     </style>
 </head>
@@ -20,37 +20,37 @@
     <form id="form1" runat="server">
     <div>
     
-        <img alt="" class="auto-style1" src="file:///C:/Users/Gray/Desktop/CS-ASP_019-Challenge/epic-spies-logo.jpg" /><br />
+        <img alt="" class="auto-style3" src="epic-spies-logo.jpg" /><br />
         <br />
-        <span class="auto-style2"><strong>Spy New Assignment Form</strong></span><br />
-        <br />
-        <br />
-        Spy Code Name: <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        New Assignment Name:
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-        <br />
-        <br />
-        <br />
-        End Date of Previous Assignment:<br />
-        <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-        <br />
-        <br />
-        Start Date of New Assignment:<br />
-        <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
-        <br />
-        <br />
-        Projected End Date of New Assignment:<br />
-        <asp:Calendar ID="Calendar3" runat="server"></asp:Calendar>
-        <br />
-        <br />
-        <asp:Button ID="Button1" runat="server" Text="Button" />
-        <br />
-        <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-    
-    </div>
+        <strong><span class="auto-style2">Epic Spies Assignment Form</span></strong></div>
+        <p>
+            Spy Code Name:
+            <asp:TextBox ID="nameTextBox" runat="server"></asp:TextBox>
+        </p>
+        <p>
+            New Assignment Name: <asp:TextBox ID="assignmentTextBox" runat="server"></asp:TextBox>
+        </p>
+        <p>
+            End Date of Previous Assignment:<asp:Calendar ID="previousCalendar" runat="server"></asp:Calendar>
+        </p>
+        <p>
+            Start Date of New Assignment:<asp:Calendar ID="startCalendar" runat="server"></asp:Calendar>
+        </p>
+        <p>
+            Projected End Date of New Assignment:<asp:Calendar ID="endCalendar" runat="server"></asp:Calendar>
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="assignButton" runat="server" OnClick="assignButton_Click" Text="Assign" />
+        </p>
+        <p>
+            <asp:Label ID="resultLabel" runat="server"></asp:Label>
+        </p>
     </form>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
 </body>
 </html>
