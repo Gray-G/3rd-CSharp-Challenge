@@ -19,6 +19,7 @@ namespace ChallengeEpicSpiesAssignment
                 endCalendar.SelectedDate = DateTime.Now.Date.AddDays(21);
                 endCalendar.VisibleDate = endCalendar.SelectedDate;
             }
+            //Page.MaintainScrollPositionOnPostBack = true;
         }
 
         protected void assignButton_Click(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace ChallengeEpicSpiesAssignment
 
                 startCalendar.SelectedDate = earliestNewAssignmentDate;
                 startCalendar.VisibleDate = earliestNewAssignmentDate;
+                totalCost = 0;
             }
         }
     }
